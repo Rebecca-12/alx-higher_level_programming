@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import random
 
 # Assign a random signed number
