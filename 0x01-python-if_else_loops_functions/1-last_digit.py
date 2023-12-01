@@ -1,29 +1,17 @@
 #!/usr/bin/python3
-def get_last_digit(n):
-    return abs(n) % 10
+import random
 
 
-def is_prime(n):
-    if n <= 1:
-        return False
-    for i in range(2, int(n ** 0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
+def main():
+    number = random.randint(-10000, 10000)
+    last_digit = abs(number) % 10
+    if last_digit > 5:
+        print("Last digit of", number, "is", last_digit, "and is greater than 5")
+    elif last_digit == 0:
+        print("Last digit of", number, "is", last_digit, "and is 0")
+    else:
+        print("Last digit of", number, "is", last_digit, "and is less than 6 and not 0")
 
 
-def prime_factors(n):
-    factors = []
-    while n > 1:
-        p = get_last_digit(n)
-        if is_prime(p):
-            factors.append(p)
-            n //= p
-        else:
-            break
-    return factors
-
-
-print(prime_factors(12)) # Output: [2, 2, 3]
-print(prime_factors(15)) # Output: [3, 5]
-print(prime_factors(24)) # Output: [2, 2, 2, 3]
+if __name__ == '__main__':
+    main()
