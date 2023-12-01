@@ -1,5 +1,7 @@
+#!/usr/bin/python3
 def get_last_digit(n):
     return abs(n) % 10
+
 
 def is_prime(n):
     if n <= 1:
@@ -8,6 +10,7 @@ def is_prime(n):
         if n % i == 0:
             return False
     return True
+
 
 def prime_factors(n):
     factors = []
@@ -19,6 +22,7 @@ def prime_factors(n):
         else:
             break
     return factors
+
 
 print(prime_factors(12)) # Output: [2, 2, 3]
 print(prime_factors(15)) # Output: [3, 5]
