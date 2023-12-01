@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-# Print the ASCII alphabet in lowercase
-for char in range(ord('a'), ord('z')+1):
-    print(chr(char), end=' ')
+# Task 3: How does a penguin build its house?
+print("How does a penguin build its house?")
+print("Igloos it together!")

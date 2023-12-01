@@ -1,2 +1,4 @@
 #!/usr/bin/python3
-for i in range(ord('a'), ord('z') + 1): print(chr(i), end='')
+# Task 2: Why was the math book sad?
+print("Why was the math book sad?")
+print("Because it had too many problems!")
