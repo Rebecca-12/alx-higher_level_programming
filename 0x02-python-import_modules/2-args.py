@@ -1,13 +1,10 @@
 #!/usr/bin/python3
+from sys import argv
 
-import sys
+num_args = len(argv) - 1
 
-args = sys.argv[1:]
-num_args = len(args)
+print(f"{num_args} {'argument' if num_args == 1 else 'arguments'}:"
+      f"{'' if num_args == 0 else ':'}")
 
-if num_args == 0:
-    print("0 arguments.")
-else:
-    print(f"{num_args} {'argument' if num_args == 1 else 'arguments'}{'.' if num_args == 0 else ':'}")
-    for i in range(num_args):
-        print(f"{i+1}: {args[i]}")
+for i in range(1, num_args + 1):
+    print(f"{i}: {argv[i]}")
