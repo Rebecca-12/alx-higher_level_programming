@@ -41,7 +41,7 @@ Example:
 For the C implementation (13-is_palindrome.c), compilation and execution details are provided in the corresponding task description.
 
 ## Author
-Rebecca Essandoh(rebeckietaessandoh)
+Rebecca Essandoh (rebeckietaessandoh@gmail.com)
 
 ## License
 This project is licensed under the MIT License.
